@@ -49,3 +49,31 @@ body ::-webkit-scrollbar-thumb {
     background-color: #ddd;
     background-clip: padding-box
 }
+---------------------------------------------
+#发光特效
+.logo-site, .logo-sites {
+    position: relative;
+    float: left;
+    margin: 10px 0 0 10px;
+    width: 220px;
+    max-height: 50px;
+    overflow: hidden;
+    transition-duration: .5s;
+}
+.logo-site:before {
+    content: "";
+    position: absolute;
+    left: -665px;
+    top: -460px;
+    width: 220px;
+    height: 15px;
+    background-color: rgba(255,255,255,.5);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: searchLights 1s ease-in 1s infinite;
+    -o-animation: searchLights 1s ease-in 1s infinite;
+    animation: searchLights 1s ease-in 1s infinite;
+}
