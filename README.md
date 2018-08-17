@@ -4,7 +4,7 @@
 #!/usr/bin/python
 from zio import *
 import struct
-target = ('106.75.66.195', 20000)
+[/font][font=宋体]target = ('106.75.93.227', 20000)
 #target= ('127.0.0.1',10000)
  
 def exp(target):
